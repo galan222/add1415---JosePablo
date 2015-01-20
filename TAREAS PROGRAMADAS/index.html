@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Tareas Programadas</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+</head>
+<body>
+<div style='display:table-row; padding: 10px;'>
+  <div style='float: left; width=20%; padding:10px;'>
+	<img src='./imagenes/logo.png'/></br></br></br>
+  </div>
+  <div style='float: left;padding:10px'>
+  <ul>
+
+    <li><b>M&oacute;dulo:</b> <i>ADD</i></li>
+    <li><b>T&iacute;tulo del trabajo</b> <i>TAREAS PROGRAMADAS</i></li>
+    <li><b>Componentes del grupo:</b> <i>Jose Pablo</i></li>
+    <li><b>Curso Acad&eacute;mico:</b> <i>2014/2015</i></li>
+    <li><b>Fecha de entrega:</b> </li>
+  </ul>
+  </div>
+</div>
+<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+<center><a href='#bloque1'>Windows</a> <a href='#bloque2'>Linux</a></center>
+</div>
+<h1><a id='bloque1'></a>Windows</h1>
+<center><p>Esta actividad consiste en hacer tareas programadas, programaremos 3 tipos de tareas, para abrir el programador de tareas en windows nos basta con poner "programador de tareas" en la barra de busqueda en el menu de inicio de windows. En primer lugar, programaremos una tarea periódica, es decir que se repita cada cierto tiempo.</p><center></br>
+<center><p>La programaremos para que nos muestre un mensaje a las 9 de la mañana de todos los días.</p><center></br>
+<center><img src='./imagenes/17.png'/></center></br></br></br>
+<center><p>Aqui introducimos el mensaje que queremos mostrar al usuario.</p><center></br>
+<center><img src='./imagenes/18.png'/></center></br></br></br>
+<center><p>Hacemos click en finalizar.</p><center></br>
+<center><img src='./imagenes/19.png'/></center></br></br></br>
+<center><img src='./imagenes/31.png'></center></br></br></br>
+<center><p>A continuación programamos una tarea diferida, que es una tarea que solo se ejecuta una vez.</p><center></br>
+<center><img src='./imagenes/20.png'/></center></br></br></br>
+<center><p>Vamos a programar un autoapagado. Para ello creamos un script sencillo con extension .bat para que llame a la consola y que contenga la instruccion de apagado ---> "shutdown -s -t 3600" con este comando programamos el apagado en windows cuando finalicen los siguientes 60 minutos a partir de la ejecucion del script. Hay que tener en cuenta que la hora que se va a introducir en la tarea programada, es la hora a la que se va a ejecutar el script y no en la que va a apagarse el sistema. </p><center></br>
+<center><img src='./imagenes/21.png'/></center></br></br></br>
+<center><p>Finalizamos.</p><center></br>
+<center><img src='./imagenes/22.png'/></center></br></br></br>
+<center><img src='./imagenes/30.png'/></center></br></br></br>
+<center><p>En la biblioteca podemos ver las tareas programadas que hemos creado.</p><center></br>
+<center><img src='./imagenes/23.png'/></center></br></br></br>
+<center><p>Vamos a programar una tarea periodica asincrona, que se ejecutara con periodicidad, pero si en determinado momento no se puede ejecutar porque el ordenador no esta en funcionamiento u otro motivo, la lanza a la fuerza. para ello hacemos lo siguiente.</p><center></br>
+<center><img src='./imagenes/38.png'></center></br></br></br>
+<center><p>Seleccionamos diariamente.</p><center></br>
+<center><img src='./imagenes/39.png'></center></br></br></br>
+<center><p>Le indicamos la hora de ejecución.</p><center></br>
+<center><img src='./imagenes/40.png'></center></br></br></br>
+<center><p>Iniciaremos el limpiador.</p><center></br>
+<center><img src='./imagenes/41.png'></center></br></br></br>
+<center><p>Aqui le damos la ruta del lanzador de la aplicación. y Agregamos /auto en el argumento para que se ejecute automaticamente.</p><center></br>
+<center><img src='./imagenes/42.png'></center></br></br></br>
+<center><p>Aquí es cuando le especificamos al programador de tareas, que si la tarea no se ejecuta, que la reinicie cada 5 minutos.</p><center></br>
+<center><img src='./imagenes/52.png'></center></br></br></br>
+<center><p>Este es el mensajito que sale cuando llega la hora programada y el cleaner entra en ejecución.</p><center></br>
+<center><img src='./imagenes/51.png'></center></br></br></br>
+
+
+
+<h1><a id='bloque2'></a>Linux</h1>
+<center><p>Programamos una tarea diferida en Linux de apagado del sistema, indicandole -h 1 el sistema se apagará en 1 minuto..</p><center></br>
+<center><img src='./imagenes/32.png'></center></br></br></br>
+<center><p>De igual modo podemos convertir la tarea de apagar el sistema en un tarea periodica, para ello nos introducimos en el fichero crontab que se encuentra en el directorio /tmp y hacemos uso de un script dando permisos de ejecucion previamente; "chmod + x" o "chmod 775" o "chmod 777".</p><center></br>
+<center><img src='./imagenes/50.png'></center></br>
+<center><p>La programamos para que se ejecute cada dos minutos, todas las horas, todos los dias del mes, todos los meses y todos los dias de la semana.</p><center></br>
+<center><img src='./imagenes/37.png'></center></br></br></br>
+<center><p>Tambien podemos programar tareas con el comando at.</p><center></br>
+<center><img src='./imagenes/34.png'></center></br></br></br>
+<center><p>Para realizar una tarea programada asíncrona en linux, la realizamos mediante el fichero anacrontab.</p><center></br>
+<center><p>Usamos un script igual que el de la tarea programada anterior, la programamos para que se realize cada 5 dias, si no se ejecuta se lanzará cada día.</p><center></br>
+<center><img src='./imagenes/51.png'></center></br></br></br>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+</body>
+</html>
+
+
