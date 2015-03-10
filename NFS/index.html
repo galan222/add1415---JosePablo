@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>....</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+</head>
+<body>
+<div style='display:table-row; padding: 10px;'>
+  <div style='float: left; width=20%; padding:10px;'>
+	<img src='./imagenes/logo.png'/></br></br></br>
+  </div>
+  <div style='float: left;padding:10px'>
+  <ul>
+
+    <li><b>M&oacute;dulo:</b> <i>ADD</i></li>
+    <li><b>T&iacute;tulo del trabajo</b> <i>NFS</i></li>
+    <li><b>Componentes del grupo:</b> <i>Jose Pablo</i></li>
+    <li><b>Curso Acad&eacute;mico:</b> <i>2014/2015</i></li>
+    <li><b>Fecha de entrega:</b> </li>
+  </ul>
+  </div>
+</div>
+<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+<center><a href='#bloque1'></a></center>
+</div>
+<h1><a id='bloque1'></a></h1>
+<center><p>Comenzamos creando en el servidor windows 2008 enterprise, los directorios public y private en la unidad C: y los compartimos por NFS.</p></center>
+<center><img src='./imagenes/1.png'/><center></br></br></br>
+<center><p>A la carpeta private le damos permisos de lectura y escritura.</p></center>
+<center><img src='./imagenes/2.png'/></center></br></br></br>
+<center><p>A la carpeta public le damos solo permisos de lectura.</p></center>
+<center><p>Iniciamos el servicio NFS.</p></center>
+<center><img src='./imagenes/3.png'/></center></br></br></br>
+<center><p>Le ponemos el nombre del primer apellido al equipo.</p></center>
+<center><img src='./imagenes/4.png'/></center></br></br></br>
+<center><p>Comenzamos on el windows 7 cliente. Le ponemos el nombre al equipo.</p></center>
+<center><img src='./imagenes/5.png'/></center></br></br></br>
+<center><p>Activamos las caracteristicas de windows para cliente nfs activando sus servicios.</p></center>
+<center><img src='./imagenes/6.png'/></center></br></br></br>
+<center><p>Iniciamos el servicio.</p></center>
+<center><img src='./imagenes/7.png'/></center></br></br></br>
+<center><p>Vamos a montar los directorios creados y compartidos en el servidor.</p></center>
+<center><img src='./imagenes/8.png'/></center></br></br></br>
+<center><p>Comprobamos que su montaje ha sido correcto.</p></center>
+<center><img src='./imagenes/9.png'/></center></br></br></br>
+<center><p>Con el comando net use vemos las unidades compartidas.</p></center>
+<center><img src='./imagenes/10.png'/></center></br></br></br>
+<center><p>Empezamos con el servidor debian, procedemos a cambiarle el nombre al sistema.</p></center>
+<center><img src='./imagenes/11.png'/></center></br></br></br>
+<center><p>Asignamos IP estática al servidor.</p></center>
+<center><img src='./imagenes/12.png'/></center></br></br></br>
+<center><img src='./imagenes/13.png'/></center></br></br></br>
+<center><p>Añadimos el cliente al fichero host.</p></center>
+<center><img src='./imagenes/14.png'/></center></br></br></br>
+<center><p>Comentamos la siguiente linea del fichero sourcer.list.</p></center>
+<center><img src='./imagenes/15.png'/></center></br></br></br>
+<center><p>Creamos los directorios que vamos a comaprtir con el cliente y le damos sus respectivos permisos.</p></center>
+<center><img src='./imagenes/17.png'/></center></br></br></br>
+<center><p>Añadimos la siguiente configuracion al fichero /etc/exports.</p></center>
+<center><img src='./imagenes/19.png'/></center></br></br></br>
+<center><p>Reiniciamos el servicio.</p></center>
+<center><img src='./imagenes/20.png'/></center></br></br></br>
+<center><p>Aqui vemos la lista de recursos exportados por enfs.</p></center>
+<center><img src='./imagenes/21.png'/></center></br></br></br>
+<center><p>Comenzamos con el cliente debian, instalamos nfs-common en la consola.</p></center>
+<center><img src='./imagenes/22.png'/></center></br></br></br>
+<center><p>Comprobamos que puede ver al servidor.</p></center>
+<center><img src='./imagenes/23.png'/></center></br></br></br>
+<center><p>Montamos los directorios creados en el servidor en el cliente gonzalez4.</p></center>
+<center><img src='./imagenes/27.png'/></center></br></br></br>
+<center><p>Con el comando df -hT vemos los recursos montados.</p></center>
+<center><img src='./imagenes/28.png'/></center></br></br></br>
+<center><p>Para configurar acciones de montaje autoḿaticos cada vez que se inicie el equipo, configuramos el fichero /etc/fstab.</p></center>
+<center><img src='./imagenes/29.png'/></center></br></br></br>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<center><p></p></center>
+
+</body>
+</html>
